@@ -1,0 +1,13 @@
+#include <windows.h>
+#include "Fill.h"
+
+MYMENU MENU DISCARDABLE 
+BEGIN
+  POPUP "&Scan Fill"
+  BEGIN
+    MENUITEM "&Draw Polygon", ID_DRAW_POLY
+    MENUITEM "&Filling", ID_FILL, GRAYED
+  END
+  MENUITEM "&Clear", ID_CLEAR
+  MENUITEM "&Exit",  ID_EXIT
+END

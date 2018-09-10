@@ -1,0 +1,12 @@
+/* Line Drawing */
+#include "DrawLine.h"
+MyMenu MENU DISCARDABLE
+BEGIN
+POPUP "&Line"
+BEGIN
+MENUITEM "&Scan Line", ID_SCLINE
+MENUITEM "&Bresenham's Line", ID_BLINE
+END
+MENUITEM "&Clear", ID_CLEAR
+MENUITEM "&Exit", ID_EXIT
+END
