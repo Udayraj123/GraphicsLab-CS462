@@ -1,0 +1,27 @@
+#include <windows.h>
+#include "Fill.h"
+
+/* Specifications of the menu bar in the application*/
+MYMENU MENU DISCARDABLE 
+BEGIN
+  MENUITEM "&Set Radii", ID_SET_RADII
+  MENUITEM "&Clear", ID_CLEAR
+  MENUITEM "&Exit",  ID_EXIT
+END
+
+
+/* Specifications of Dialogue box int he menu bar*/
+MyDB DIALOG DISCARDABLE  0, 0, 180, 120
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Circle Radius"
+FONT 8, "MS Sans Serif"
+BEGIN
+  DEFPUSHBUTTON   "OK",ID_OK,31,100,50,14
+  PUSHBUTTON      "CANCEL",ID_CANCEL,104,100,50,14
+  LTEXT           "Circle 1 Radius:",ID_LABEL1,15,14,108,17
+  LTEXT           "Circle 2 Radius:",ID_LABEL2,15,41,108,22
+  LTEXT           "Circle 3 Radius:",ID_LABEL3,15,68,108,27
+  EDITTEXT        ID_EB1,114,14,40,15,ES_AUTOHSCROLL
+  EDITTEXT        ID_EB2,114,41,40,15,ES_AUTOHSCROLL
+  EDITTEXT        ID_EB3,114,68,40,15,ES_AUTOHSCROLL
+END

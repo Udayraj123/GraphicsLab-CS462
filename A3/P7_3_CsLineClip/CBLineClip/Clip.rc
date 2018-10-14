@@ -1,0 +1,14 @@
+#include <windows.h>
+#include "ClipUtil.h"
+
+MyMenu MENU DISCARDABLE 
+BEGIN
+  POPUP "&Line Clipping"
+  BEGIN
+    MENUITEM "Draw &Polygon", ID_DRAW_POLYGON
+    MENUITEM "Draw &Line", ID_DRAW_LINE, GRAYED
+    MENUITEM "C&B Clip", ID_CLIP, GRAYED
+  END 
+  MENUITEM "&Clear", ID_CLEAR
+  MENUITEM "&Exit", ID_EXIT
+END
